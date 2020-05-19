@@ -9,22 +9,27 @@ body {
     height: 100vh;
 }
 
-.container {}
+.container {
+    width: 100%;
+}
 
+/* Navigation */
 nav {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100%;
-    background-color: aqua;
+    padding: 10px 0;
 }
 
 .logo {
     font-size: 3rem;
+    font-weight: 600;
     grid-column: span 3;
     justify-self: center;
 }
 
-nav a, #stripeBtn {
+nav a,
+#stripeBtn {
     display: inline-block;
     width: 6rem;
     height: 28px;
@@ -43,7 +48,8 @@ nav a, #stripeBtn {
 }
 
 #users,
-#contact, #stripeBtn {
+#contact,
+#stripeBtn {
     color: #000;
     background: #fff;
     border: 2px solid #2b2b2b;
@@ -58,11 +64,6 @@ nav a, #stripeBtn {
 }
 
 nav a:hover {}
-
-#stripeBtn{
-    padding-left: 0;
-    padding-right: 0;
-}
 
 /*
 @media (min-width: 768px) {
@@ -81,22 +82,22 @@ nav a:hover {}
     grid-column-start: 6;
 }
 
+/* Landing */
 .landing,
 .stripe {
-    background-color: bisque;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .landText {
-    padding: 80px;
+    padding: 80px 0 80px 70px;
 }
 
 .landText h3 {
-     font-weight: 100;
+    font-weight: 100;
 }
 
-.landText p{
+.landText p {
     font-size: 0.9rem;
 }
 
@@ -110,11 +111,13 @@ nav a:hover {}
     height: 65%;
 }
 
+/* Middle */
 section {
-    padding: 40px;
+    padding: 20px 70px;
 }
 
-#title, .middleColumns h5 {
+#title,
+.middleColumns h5 {
     text-align: center;
     font-weight: 100;
 }
@@ -138,4 +141,36 @@ section {
     font-size: 0.8rem;
 }
 
+.stripeLogo {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
 
+.stripeLogo img {
+    width: 55%;
+    height: 55%;
+    padding-bottom: 10px;
+}
+
+#stripeBtn {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Socials */
+.socialLinks {
+    text-align: right;
+    padding: 20px;
+}
+
+.socialLinks a img {
+    height: 25px;
+}
+
+#linkedin img {
+    position: relative;
+    bottom: 2px;
+    height: 22px;
+    padding: 0 8px;
+}
