@@ -103,12 +103,12 @@ nav a:hover {}
 
 .laptopImg {
     align-self: center;
-    text-align: center;
+    text-align: left;
 }
 
 .laptopImg img {
-    width: 65%;
-    height: 65%;
+    width: 90%;
+/*    height: 75%;*/
 }
 
 /* Middle */
