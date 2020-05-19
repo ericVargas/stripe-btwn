@@ -24,7 +24,7 @@ nav {
     justify-self: center;
 }
 
-nav a {
+nav a, #stripeBtn {
     display: inline-block;
     width: 6rem;
     height: 28px;
@@ -43,7 +43,7 @@ nav a {
 }
 
 #users,
-#contact {
+#contact, #stripeBtn {
     color: #000;
     background: #fff;
     border: 2px solid #2b2b2b;
@@ -59,6 +59,12 @@ nav a {
 
 nav a:hover {}
 
+#stripeBtn{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*
 @media (min-width: 768px) {
     nav a {
         width: 12rem;
@@ -69,6 +75,7 @@ nav a:hover {}
         line-height: 2.5rem;
     }
 }
+*/
 
 #users {
     grid-column-start: 6;
@@ -83,19 +90,33 @@ nav a:hover {}
 
 .landText {
     padding: 80px;
-    /*    text-align: justify;*/
 }
 
 .landText h3 {
-    font-size: 1.4rem;
+     font-weight: 100;
+}
+
+.landText p{
+    font-size: 0.9rem;
+}
+
+.laptopImg {
+    align-self: center;
+    text-align: center;
+}
+
+.laptopImg img {
+    width: 65%;
+    height: 65%;
 }
 
 section {
     padding: 40px;
 }
 
-#title {
+#title, .middleColumns h5 {
     text-align: center;
+    font-weight: 100;
 }
 
 .middle {
@@ -105,16 +126,16 @@ section {
     padding-top: 30px;
 }
 
-.middleColumns {
-    /*    padding: 20px;*/
-}
-
 .middleColumns h5,
 .stripeText h4 {
     color: #e9454d;
+    font-weight: 100;
 }
 
 .middleColumns p,
 .stripeText p {
     padding: 20px 0;
+    font-size: 0.8rem;
 }
+
+
