@@ -18,7 +18,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .logo {
@@ -26,9 +26,17 @@ nav {
   font-weight: 600;
   grid-column: span 3;
   justify-self: center;
+  text-decoration: none;
+  color: #000;
 }
 
-nav a,
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+/* nav a, */
 #stripeBtn,
 #accountBtn {
   display: inline-block;
