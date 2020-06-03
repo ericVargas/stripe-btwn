@@ -11,6 +11,7 @@ body {
 
 .container {
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -142,35 +143,66 @@ section {
 }
 
 #title,
-.middleColumns h5 {
+.middleText h5 {
   text-align: center;
   font-weight: 100;
 }
 
-.middle {
+.phones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding-top: 30px;
 }
 
-.middleColumns h5,
+.middleText h5,
 .stripeText h4,
 #title {
   color: #e9454d;
   font-weight: 100;
 }
 
-.middleColumns p,
+.middleText p,
 .stripeText p {
   padding: 20px 0;
   font-size: 0.8rem;
 }
 
-/* Phones */
-.middleColumns {
+/* Middle Text Grid */
+.middleText {
   display: grid;
+  grid-template-areas:
+    'firstTitle midTitle lastTitle'
+    'firstText midText lastText';
+  grid-gap: 20px;
+  padding-top: 30px;
 }
+
+.middleText h5:first-of-type {
+  grid-area: firstTitle;
+}
+
+.middleText p:first-of-type {
+  grid-area: firstText;
+}
+
+.middleText h5:nth-of-type(2) {
+  grid-area: midTitle;
+}
+
+.middleText p:nth-of-type(2) {
+  grid-area: midText;
+}
+
+.middleText h5:last-of-type {
+  grid-area: lastTitle;
+}
+
+.middleText p:last-of-type {
+  grid-area: lastText;
+}
+
+/* Phones */
 .phoneImg {
   align-self: center;
 }
@@ -206,4 +238,45 @@ section {
   bottom: 2px;
   height: 22px;
   padding: 0 8px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1100px) {
+}
+
+@media only screen and (max-width: 769px) {
+}
+
+@media only screen and (max-width: 555px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 0;
+  }
+
+  .landing {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      'laptop'
+      'landText';
+  }
+
+  .laptopImg {
+    justify-self: center;
+    /* text-align: center; */
+    grid-area: laptop;
+  }
+
+  .landText {
+    padding: 30px 20px;
+    text-align: center;
+    grid-area: landText;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  .phoneImg {
+    display: none;
+  }
 }
