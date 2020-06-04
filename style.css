@@ -237,9 +237,14 @@ section {
 }
 
 @media only screen and (max-width: 555px) {
+  /* Top */
   nav {
     grid-template-columns: repeat(2, 1fr);
     padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 2.5rem;
   }
 
   .landing {
@@ -251,7 +256,6 @@ section {
 
   .laptopImg {
     justify-self: center;
-    /* text-align: center; */
     grid-area: laptop;
   }
 
@@ -261,24 +265,85 @@ section {
     grid-area: landText;
   }
 
+  .landText h3 {
+    font-size: 0.9rem;
+  }
+
+  .landText p {
+    font-size: 0.7rem;
+  }
+
+  /* Middle */
   section {
+    padding: 15px 0;
+  }
+
+  .stripeText p,
+  .phoneColumn p {
+    padding: 15px;
+    font-size: 0.4rem;
+  }
+
+  .stripeText h4,
+  #title {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .middleText {
+    grid-template-areas:
+      'firstTitle firstText'
+      'midText midTitle'
+      'lastTitle lastText';
+    grid-gap: 15px 5px;
+    padding: 15px 15px 30px;
+  }
+
+  .middleText h5 {
+    font-size: 0.6rem;
+  }
+  .middleText p {
     padding: 0;
+    font-size: 0.5rem;
   }
 
-  .phoneImg {
-    display: none;
+  .middleText h5:first-of-type,
+  .middleText p:nth-of-type(2),
+  .middleText h5:last-of-type {
+    text-align: right;
+  }
+
+  .middleText p:first-of-type,
+  .middleText h5:nth-of-type(2),
+  .middleText p:last-of-type {
+    text-align: left;
+  }
+
+  .phones {
+    grid-gap: 0;
+  }
+
+  /* Bottom */
+  #stripeBtn,
+  #accountBtn {
+    height: 26px;
+    font-size: 0.6rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  #accountBtn {
+    width: 12rem;
+    justify-self: center;
+    margin: 10px 0;
+  }
+
+  .socialLinks {
+    text-align: center;
+    padding: 0 0 20px;
+  }
+
+  .socialLinks a img {
+    height: 25px;
   }
 }
-
-/*
-@media (min-width: 768px) {
-    nav a {
-        width: 12rem;
-        height: 2.5rem;
-        padding-top: 0;
-        margin-right: 1rem;
-        font-size: 1.25rem;
-        line-height: 2.5rem;
-    }
-}
-*/
