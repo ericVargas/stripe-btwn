@@ -278,6 +278,12 @@ section {
     padding: 15px 0;
   }
 
+  .stripeLogo img {
+    width: 40%;
+    height: 40%;
+    padding-bottom: 10px;
+  }
+
   .stripeText p,
   .phoneColumn p {
     padding: 15px;
