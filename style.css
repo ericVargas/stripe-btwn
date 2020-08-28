@@ -140,12 +140,14 @@ section {
 .middleText h5,
 .middleText p,
 .stripe h4,
+#phoneTitle,
 .phoneColumn p {
   text-align: center;
 }
 
 
-.middleText h5{
+.middleText h5,
+.tick{
   color: #e9454d;
   font-weight: 100;
 }
@@ -166,7 +168,8 @@ section {
 }
 
 #title,
-.stripe h4{
+.stripe h4,
+#phoneTitle{
   font-weight: 600;
   font-size: 1.6rem;
 }
@@ -231,11 +234,20 @@ section {
   right: 48%;
 }
 
-#accountBtn {
+/* Become a vendor */
+#contactUs,
+#faq{
+  color: #e9454d;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+
+/* #accountBtn {
   width: 20rem;
   justify-self: center;
   margin: 20px 0;
-}
+} */
 
 /* Socials */
 .socialLinks {
