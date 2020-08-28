@@ -17,13 +17,13 @@ body {
 /* Navigation */
 nav {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   grid-column: span 3;
   justify-self: center;
@@ -38,8 +38,7 @@ nav {
 }
 
 /* nav a, */
-#stripeBtn,
-#accountBtn {
+.stripeBtn{
   display: inline-block;
   width: 6rem;
   height: 28px;
@@ -57,21 +56,24 @@ nav {
   justify-self: center;
 }
 
-#users,
+/* #users,
 #contact,
-#stripeBtn,
+.stripeBtn,
 #accountBtn {
   color: #000;
   background: #fff;
   border: 2px solid #2b2b2b;
-}
+} */
 
-#join,
-#blog {
+#getStarted {
+  grid-column: span 2;
   color: #fff;
   background: #e9454d;
   border: 2px solid #e9454d;
   /* #e02d3c */
+  width: 15rem;
+  justify-self: center;
+  margin: 20px 0;
 }
 
 #users {
@@ -90,11 +92,12 @@ nav {
 }
 
 .landText h3 {
-  font-weight: 100;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .landText p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .laptopImg {
@@ -124,7 +127,7 @@ section {
   padding-bottom: 10px;
 }
 
-#stripeBtn {
+.stripeBtn {
   padding-left: 0;
   padding-right: 0;
 }
@@ -136,13 +139,13 @@ section {
 #title,
 .middleText h5,
 .middleText p,
+.stripe h4,
 .phoneColumn p {
   text-align: center;
 }
 
-.stripeText h4,
-.middleText h5,
-#title {
+
+.middleText h5{
   color: #e9454d;
   font-weight: 100;
 }
@@ -155,7 +158,24 @@ section {
 }
 
 /* Middle Text Grid */
-.middleText {
+.middleText{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 20px;
+  padding-top: 30px;
+}
+
+#title,
+.stripe h4{
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.block{
+  background:#d4d4d4;
+}
+
+/* .middleText {
   display: grid;
   grid-template-areas:
     'firstTitle midTitle lastTitle'
@@ -186,6 +206,11 @@ section {
 
 .middleText p:last-of-type {
   grid-area: lastText;
+} */
+
+ /* How to start */
+ .stripe h4{
+ grid-column: span 2;
 }
 
 /* Phones */
@@ -330,8 +355,7 @@ section {
   }
 
   /* Bottom */
-  #stripeBtn,
-  #accountBtn {
+  .stripeBtn {
     height: 26px;
     font-size: 0.6rem;
     padding-left: 0.4rem;
