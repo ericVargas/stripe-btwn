@@ -20,16 +20,16 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    padding: 20px 0;
+    padding: 25px 0;
   }
   
   .logo {
-    font-size: 2rem;
-    font-weight: 600;
-    grid-column: span 3;
+    /* font-size: 2rem;
+    font-weight: 600; */
+    /* grid-column: span 3; */
     justify-self: center;
-    text-decoration: none;
-    color: #000;
+    /* text-decoration: none;
+    color: #000; */
   }
   
   .logo:hover {
@@ -82,7 +82,7 @@
   }
   
   .landText {
-    padding: 80px 0 80px 70px;
+    padding: 80px 70px;
   }
   
   .landText h3 {
@@ -325,42 +325,90 @@ footer{
 }
 
 @media only screen and (max-width: 555px) {
-  /* Top */
-  nav {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px 0;
-  }
+  /* Landing */
+  /* nav {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 25px 0;
+  } */
 
-  .logo {
-    font-size: 1.5rem;
+/* .logo {
+  grid-column: 1;
+} */
+
+  .logo img{
+    width: 65%;
+    /* text-align: center; */
   }
 
   .landing {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-      'laptop'
-      'landText';
+      'landText'
+      'button'
+      'group';
   }
 
   .gropupImg {
     justify-self: center;
-    grid-area: laptop;
+    grid-area: group;
+    text-align: center;
+  }
+
+  .groupImg img {
+    width: 80%;
+    /*    height: 75%;*/
   }
 
   .landText {
-    padding: 30px 20px;
-    text-align: center;
+    padding: 35px;
+    text-align: left;
     grid-area: landText;
   }
 
   .landText h3 {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
 
   .landText p {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
+  #getStarted{
+    grid-area: button;
+    grid-column: span 1;
+    margin-bottom: 40px;
+  }
+
+
+
+
+
+
+  .whyText{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 25px;
+    padding-top: 10px;
+    /* justify-content: space-evenly; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   /* Middle */
   section {
     padding: 15px 0;
