@@ -1,240 +1,235 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  html,
-  body {
-    height: 100vh;
-  }
-  
-  .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  
-  /* --- Navigation --- */
-  nav {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    padding: 25px 0;
-  }
-  
-  .logo {
-    /* font-size: 2rem;
+html,
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- Navigation --- */
+nav {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  padding: 25px 0;
+}
+
+.logo {
+  /* font-size: 2rem;
     font-weight: 600; */
-    /* grid-column: span 3; */
-    justify-self: center;
-    /* text-decoration: none;
+  /* grid-column: span 3; */
+  justify-self: center;
+  /* text-decoration: none;
     color: #000; */
-  }
-  
-  .logo:hover {
-    transform: scale(1.1);
-    transition: transform 0.6s;
-    cursor: pointer;
-  }
-  
-  .btwnBtn{
-    display: inline-block;
-    width: 6rem;
-    height: 28px;
-    margin-right: 0.75rem;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 23px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 99em;
-    padding-left: 0;
-    padding-right: 0;
-    /* padding-left: 0.75rem;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.btwnBtn {
+  display: inline-block;
+  width: 6rem;
+  height: 28px;
+  margin-right: 0.75rem;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 99em;
+  padding-left: 0;
+  padding-right: 0;
+  /* padding-left: 0.75rem;
     padding-right: 0.75rem; */
-    padding-top: 0.25rem;
-    align-self: center;
-    justify-self: center;
-  }
-  
-  #getStarted {
-    grid-column: span 2;
-    color: #fff;
-    background: #e9454d;
-    border: 2px solid #e9454d;
-    /* #e02d3c */
-    width: 15rem;
-    margin: 20px 0;
-  }
+  padding-top: 0.25rem;
+  align-self: center;
+  justify-self: center;
+}
 
+#getStarted {
+  grid-column: span 2;
+  color: #fff;
+  background: #e9454d;
+  border: 2px solid #e9454d;
+  /* #e02d3c */
+  width: 15rem;
+  margin: 20px 0;
+}
 
-  /* --- Landing --- */
-  .landing,
-  .howToStart,
-  #becomeVendor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* --- Landing --- */
+.landing,
+.howToStart,
+#becomeVendor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-  .landing{
-    padding-bottom: 45px;
-  }
-  
-  .landText {
-    padding: 80px 70px;
-  }
-  
-  .landText h3 {
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-  
-  .landText p {
-    font-size: 1rem;
-  }
-  
-  .groupImg {
-    align-self: center;
-    text-align: left;
-  }
-  
-  .groupImg img {
-    width: 90%;
-    /*    height: 75%;*/
-  }
+.landing {
+  padding-bottom: 45px;
+}
 
-  
-  /* --- Why join --- */
-  section {
-    padding: 65px;
-  }
-  
-  #why,
-  #phoneSection {
-    /* display: grid; */
-    background-color: #fafafa;
-  }
-  
-  .sectionTitle,
-  .whyText h5,
-  .whyText p,
-  .howToStart h4,
-  .phoneColumn p {
-    text-align: center;
-  }
+.landText {
+  padding: 80px 70px;
+}
 
-  .sectionTitle{
-      padding-bottom: 30px;
-  }
+.landText h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
 
-  .whyText{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0 25px;
-    padding-top: 30px;
-    /* justify-content: space-evenly; */
-  }
+.landText p {
+  font-size: 1rem;
+}
 
-  .block{
-    background:#fff;
-    padding: 15%;
-    box-shadow: 0 0 10px #d3d3d3;
-  }
-  
-  .whyText h5,
-  .tick{
-    color: #e9454d;
-    font-weight: 600;
-  }
-  
-  .howText p,
-  .whyText p,
-  .phoneColumn p,
-  .becomeText p {
-    padding: 20px 0;
-    font-size: 0.8rem;
-  }
-  
-  .sectionTitle,
-  .howToStart h4{
-    font-weight: 600;
-    font-size: 1.6rem;
-  }
-  
- 
+.groupImg {
+  align-self: center;
+  text-align: left;
+}
+
+.groupImg img {
+  width: 90%;
+  /*    height: 75%;*/
+}
+
+/* --- Why join --- */
+section {
+  padding: 65px;
+}
+
+#why,
+#phoneSection {
+  /* display: grid; */
+  background-color: #fafafa;
+}
+
+.sectionTitle,
+.whyText h5,
+.whyText p,
+.howToStart h4,
+.phoneColumn p {
+  text-align: center;
+}
+
+.sectionTitle {
+  padding-bottom: 30px;
+}
+
+.whyText {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 25px;
+  padding-top: 30px;
+  /* justify-content: space-evenly; */
+}
+
+.block {
+  background: #fff;
+  padding: 15%;
+  box-shadow: 0 0 10px #d3d3d3;
+}
+
+.whyText h5,
+.tick {
+  color: #e9454d;
+  font-weight: 600;
+}
+
+.howText p,
+.whyText p,
+.phoneColumn p,
+.becomeText p {
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+.sectionTitle,
+.howToStart h4 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
 /* --- How to start --- */
-.howToStart h4{
-    grid-column: span 2;
-   }
+.howToStart h4 {
+  grid-column: span 2;
+}
 
-   .tick img{
-       width: 25px;
-       height: 25px;
-       padding: 0 15px;
-       position: relative;
-       top: 10px;
-   }
+.tick img {
+  width: 25px;
+  height: 25px;
+  padding: 0 15px;
+  position: relative;
+  top: 10px;
+}
 
-   .howText p{
-       padding-left: 55px;
-   }
+.howText p {
+  padding-left: 55px;
+}
 
-  .btwnGraph {
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-  
-  .btwnGraph img {
-    width: 60%;
-    height: 60%;
-    padding-bottom: 10px;
-  }
-  
+.btwnGraph {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.btwnGraph img {
+  width: 60%;
+  height: 60%;
+  padding-bottom: 10px;
+}
+
 /* --- Phones --- */
 .phones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-  }
-  
-  .phoneImg {
-    align-self: center;
-  }
-  
-  .phoneImg img {
-    width: 200%;
-    height: 200%;
-    position: relative;
-    right: 48%;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
 
-  .phoneColumn p {
-    padding: 20px;
-  }
+.phoneImg {
+  align-self: center;
+}
 
+.phoneImg img {
+  width: 200%;
+  height: 200%;
+  position: relative;
+  right: 48%;
+}
+
+.phoneColumn p {
+  padding: 20px;
+}
 
 /* --- Become a vendor --- */
-#becomeVendor{
-    background-color: #e9454d;
-    color: #fff;
-    grid-gap: 0 50px;
-    padding: 45px 65px;
+#becomeVendor {
+  background-color: #e9454d;
+  color: #fff;
+  grid-gap: 0 50px;
+  padding: 45px 65px;
 }
 
 .becomeText,
-.becomeLinks{
-    place-self: center;
+.becomeLinks {
+  place-self: center;
 }
 
-.becomeText h4{
-    font-weight: 600;
-    font-size: 1.2rem;
+.becomeText h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 #contactUs,
-#faq{
+#faq {
   color: #e9454d;
   background: #fff;
   border: 2px solid #fff;
@@ -242,28 +237,27 @@
   margin: 10px 0;
 }
 
-
 /* --- Footer --- */
-footer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 25px 50px;
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 25px 50px;
 }
 
 #slogan,
-.socialLinks{
-    align-self: center;
+.socialLinks {
+  align-self: center;
 }
 
-#slogan h4{
-    font-weight: 600;
-    font-size: 1.3rem;
-    padding-bottom: 10px;
+#slogan h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
 }
 
-#slogan p{
-    font-weight: 600;
-    font-size: 0.7rem;
+#slogan p {
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 .socialLinks {
@@ -282,42 +276,7 @@ footer{
   padding: 0 8px;
 }
 
-
-  /* .middleText {
-    display: grid;
-    grid-template-areas:
-      'firstTitle midTitle lastTitle'
-      'firstText midText lastText';
-    grid-gap: 0 20px;
-    padding-top: 30px;
-  }
-  
-  .middleText h5:first-of-type {
-    grid-area: firstTitle;
-  }
-  
-  .middleText p:first-of-type {
-    grid-area: firstText;
-  }
-  
-  .middleText h5:nth-of-type(2) {
-    grid-area: midTitle;
-  }
-  
-  .middleText p:nth-of-type(2) {
-    grid-area: midText;
-  }
-  
-  .middleText h5:last-of-type {
-    grid-area: lastTitle;
-  }
-  
-  .middleText p:last-of-type {
-    grid-area: lastText;
-  } */
-
-
-  /* --- Media Queries --- */
+/* --- Media Queries --- */
 @media only screen and (min-width: 1100px) {
 }
 
@@ -331,11 +290,11 @@ footer{
     padding: 25px 0;
   } */
 
-/* .logo {
+  /* .logo {
   grid-column: 1;
 } */
 
-  .logo img{
+  .logo img {
     width: 65%;
     /* text-align: center; */
   }
@@ -360,131 +319,146 @@ footer{
   }
 
   .landText {
-    padding: 35px;
+    padding: 25px 35px;
     text-align: left;
     grid-area: landText;
   }
 
   .landText h3 {
-    font-size: 1.4rem;
-  }
-
-  .landText p {
-    font-size: 1rem;
-  }
-
-  #getStarted{
-    grid-area: button;
-    grid-column: span 1;
-    margin-bottom: 40px;
-  }
-
-
-
-
-
-
-  .whyText{
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0 25px;
-    padding-top: 10px;
-    /* justify-content: space-evenly; */
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  /* Middle */
-  section {
-    padding: 15px 0;
-  }
-
-  .btwnGraph img {
-    width: 40%;
-    height: 40%;
+    font-size: 1.5rem;
     padding-bottom: 10px;
   }
 
-  .howText p,
-  .phoneColumn p {
-    padding: 15px;
-    font-size: 0.4rem;
-  }
-
-  .howText h4,
-  .sectionTitle {
-    font-weight: 600;
+  .landText p {
     font-size: 0.9rem;
   }
 
-  /* .middleText {
-    grid-template-areas:
-      'firstTitle firstText'
-      'midText midTitle'
-      'lastTitle lastText';
-    grid-gap: 15px 5px;
-    padding: 15px 15px 30px;
-  } */
-
-  .middleText h5 {
-    font-size: 0.6rem;
-  }
-  .middleText p {
-    padding: 0;
-    font-size: 0.5rem;
+  #getStarted {
+    grid-area: button;
+    grid-column: span 1;
+    margin-bottom: 40px;
+    width: 10rem;
   }
 
-  .middleText h5:first-of-type,
-  .middleText p:nth-of-type(2),
-  .middleText h5:last-of-type {
-    text-align: right;
+  /* Why join */
+  section {
+    padding: 20px;
   }
 
-  .middleText p:first-of-type,
-  .middleText h5:nth-of-type(2),
-  .middleText p:last-of-type {
+  .sectionTitle {
+    font-size: 1.3rem;
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  .whyText {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    /* padding-top: 10px; */
+    /* justify-content: space-evenly; */
+  }
+
+  .block {
+    padding: 10%;
+    margin: 5%;
+    /* box-shadow: 0 0 10px #d3d3d3; */
+  }
+
+  .whyText h5
+  /* .tick */ {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .whyText p {
+    font-size: 1rem;
     text-align: left;
   }
 
+  /* How to start */
+  .howToStart,
+  #becomeVendor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .howToStart h4 {
+    grid-column: span 1;
+  }
+
+  /* Phones */
   .phones {
-    grid-gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
   }
 
-  /* Bottom */
-  .btwnBtn {
-    height: 26px;
-    font-size: 0.6rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+  .phoneImg {
+    align-self: center;
   }
 
-  /* #accountBtn {
+  .phoneImg img {
+    width: 200%;
+    height: 200%;
+    position: relative;
+    right: 48%;
+  }
+
+  .phoneColumn p {
+    padding: 0 40px;
+  }
+
+  /* Become a vendor */
+  #becomeVendor {
+    padding: 35px;
+  }
+
+  .becomeText,
+  .becomeLinks {
+    text-align: center;
+  }
+
+  .becomeText h4 {
+    font-size: 1.2rem;
+  }
+
+  #contactUs,
+  #faq {
     width: 12rem;
-    justify-self: center;
     margin: 10px 0;
-  } */
+  }
+
+  /* Footer */
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 35px;
+  }
+
+  /* #slogan,
+.socialLinks {
+  align-self: center;
+} */
+
+  /* #slogan h4 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+} */
+
+  /* #slogan p {
+  font-size: 0.7rem;
+} */
 
   .socialLinks {
-    text-align: center;
-    padding: 0 0 20px;
+    justify-self: center;
+    /* padding-top: 20px; */
   }
 
-  .socialLinks a img {
-    height: 25px;
-  }
+  /* .socialLinks a img {
+  height: 25px;
+} */
+
+  /* #linkedin img {
+  position: relative;
+  bottom: 2px;
+  height: 22px;
+  padding: 0 8px;
+} */
 }
