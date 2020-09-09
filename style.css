@@ -1,6 +1,6 @@
 @font-face {
   font-family: SF_UI_Display;
-  src: url("./sf-ui-display-medium.otf") format("opentype");
+  src: url('./sf-ui-display-medium.otf') format('opentype');
 }
 
 * {
@@ -8,7 +8,6 @@
   margin: 0;
   font-family: 'SF_UI_Display', sans-serif;
 }
-
 
 html,
 body {
@@ -292,18 +291,13 @@ footer {
 
 @media only screen and (max-width: 555px) {
   /* Landing */
-  /* nav {
-    grid-template-columns: repeat(1, 1fr);
+  nav {
     padding: 25px 0;
-  } */
-
-  /* .logo {
-  grid-column: 1;
-} */
+  }
 
   .logo img {
     width: 65%;
-    /* text-align: center; */
+    margin-left: 18%;
   }
 
   .landing {
@@ -315,15 +309,13 @@ footer {
   }
 
   .gropupImg {
-    justify-self: center;
     grid-area: group;
-    text-align: center;
   }
 
   .groupImg img {
     width: 80%;
-    /*    height: 75%;*/
-  }
+    margin-left: 10%;
+    }
 
   .landText {
     padding: 25px 35px;
@@ -332,12 +324,12 @@ footer {
   }
 
   .landText h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding-bottom: 10px;
   }
 
   .landText p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   #getStarted {
@@ -345,6 +337,7 @@ footer {
     grid-column: span 1;
     margin-bottom: 40px;
     width: 10rem;
+    font-size: 0.875rem;
   }
 
   /* Why join */
@@ -353,7 +346,7 @@ footer {
   }
 
   .sectionTitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-bottom: 0px;
     padding-top: 10px;
   }
@@ -374,7 +367,7 @@ footer {
   .whyText h5
   /* .tick */ {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.375rem;
   }
 
   .whyText p {
@@ -390,9 +383,22 @@ footer {
 
   .howToStart h4 {
     grid-column: span 1;
+    padding-bottom: 20px;
+  }
+
+  .tick {
+    font-size: 1.375rem;
+  }
+
+  .howText p {
+    padding-left: 15px;
   }
 
   /* Phones */
+  #phoneSection .sectionTitle{
+    padding-bottom: 20px;
+  }
+
   .phones {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 15px;
@@ -403,10 +409,9 @@ footer {
   }
 
   .phoneImg img {
-    width: 200%;
-    height: 200%;
-    position: relative;
-    right: 48%;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
   }
 
   .phoneColumn p {
@@ -424,13 +429,14 @@ footer {
   }
 
   .becomeText h4 {
-    font-size: 1.2rem;
+    font-size: 1.375rem;
   }
 
   #contactUs,
   #faq {
     width: 12rem;
     margin: 10px 0;
+    font-size: 0.875rem;
   }
 
   /* Footer */
@@ -439,19 +445,13 @@ footer {
     padding: 35px;
   }
 
-  /* #slogan,
-.socialLinks {
-  align-self: center;
-} */
+  #slogan h4 {
+    font-size: 2rem;
+  }
 
-  /* #slogan h4 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-} */
-
-  /* #slogan p {
-  font-size: 0.7rem;
-} */
+  #slogan p {
+    font-size: 1rem;
+  }
 
   .socialLinks {
     justify-self: center;
